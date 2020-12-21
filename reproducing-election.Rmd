@@ -1,0 +1,15 @@
+---
+title: "Reproducing Predction on Canadian Federal Election"
+author: "Xiaoqing Liao 1004963140"
+date: "12/22/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+In traditional pollsters, individuals are randomly sampled and asked who they intend to vote for. However, the data will never be free from bias as there are always further snares to avoid in statistical work. For example, with the improvement of technology, one of the challenges when it comes to forecast elections is that as people lead increasingly mobile lives, it is becoming tricky in getting touch with the electorates. Also, there are people who are not actually involving in voting. Those uncertainty can potential change the outcome of the elections. 
+
+In this analysis, we would identify how the 2019 Canadian Federal Election would have been different if every qualified electorates had voted. We demonstrate this by using multilevel regression and poststratification (MRP) approach. A MRP model will be built based on the Canadian Election Survey (CES) and Statistics Canada 2016 Census data will be used as post-stratification dataset.
